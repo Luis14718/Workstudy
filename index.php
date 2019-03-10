@@ -3,12 +3,51 @@
 <title>Web System</title>
 
 	<style>
+	.col{
+
+	
+	
+	
+	 -webkit-text-fill-color: #ababab;
+    font-family: fantasy;
+    font-size: xx-large;
+
+	}
+	.col2{
+		background-color:#f4f4f4;
 		
+		-webkit-text-fill-color: #ababab;
+    font-family: fantasy;
+    font-size: xx-large;
+	}
+
+	
+	
+	
+-webkit-text-fill-color: #ababab;
+font-family: fantasy;
+font-size: xx-large;
+
+}
+		.img2{
+
+ width:500;
+
+
+		}
+		.right2{
+
+			width: 50%;
+    float: right;
+    padding-top: 100;
+    height: 400;
+    text-align: center;
+		}
 		body
 		{  
-			background-image:linear-gradient(rgba(0, 132, 255, 0),rgba(0, 110, 255, 0)),url(image.jpg);
+			background-image:linear-gradient(rgba(0, 132, 255, 0),rgba(0, 110, 255, 0)),url(bg.png);
 			height: auto;
-			background-size: cover;
+			background-size: fixed;
 			color: white;
 			background-position: center;
 		  
@@ -88,14 +127,34 @@
 		
 	body { border-style: dotted; border-width: 2px;}
 	
-div {border-style: solid; border-width:2px; margin:7px; padding:7px; }
+div { border-width:2px; margin:7px; padding:7px; }
+.left2{
 
-.left{     padding-top: 200;
+	height: 300;
+    width: auto;
+		text-align:center;  background-color:#f4f4f4;
+
+
+}
+
+.left{     padding-top: 178;
 	padding-bottom: 200;
-		text-align:center; }
+		text-align:center;  background-color:#f4f4f4;}
 	
+.img1{
 
+width:300;
+height:400;
+margin-right:25%;
 
+}
+.img2{
+
+    height: 300;
+    width: 374;
+    margin-right: 0;
+
+}
 .right{ width:50%;
 float: right
 ;
@@ -160,13 +219,21 @@ img
 
 <div class= col>
 <div class= right >
-<img  src="main1.png" alt="Main1 Image">
+<img class=img1  src="main1.png" alt="Main1 Image">
 </div>
 		<div class= left>
 		Easy to connect
 </div>
 
 
+<div class= col2>
+<div class= right2 >
+we are hiring
+</div>
+		<div class= left2>
+		<img class=img2  src="hiring.jpg" alt="Main1 Image">
+		
+</div>
 
 	</body>
 </html>
