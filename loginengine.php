@@ -31,7 +31,7 @@
 	
 	//Create query
 	$qry="SELECT * FROM login WHERE username='$login' AND password='$password'";
-	//$qry="SELECT * FROM user WHERE username='admin' AND password='admin'";
+
 	$result=mysqli_query($bd,$qry);
 
 	//Check whether the query was successful or not
@@ -48,7 +48,7 @@
 			exit();
 		}else {
 			//Login failed
-			header("location: login.php");
+			header("location: index.php");
 			exit();
 		}
 	}else {
