@@ -7,7 +7,7 @@ var ss = document.getElementsByClassName('stopwatch');
         start = s.querySelector('button.start'),
         stop = s.querySelector('button.stop'),
         reset = s.querySelector('button.reset'),
-		hour = s.querySelector ('span.hour'),
+		hours = s.querySelector ('span.hours'),
         mins = s.querySelector('span.minutes'),
         secs = s.querySelector('span.seconds'),
         cents = s.querySelector('span.centiseconds');
@@ -28,7 +28,7 @@ var ss = document.getElementsByClassName('stopwatch');
 
         var time = new Date(currentTimer);
 		
-        hour.innerHTML = pad(time.getHours());
+        hours.innerHTML = pad(time.getMinutes()/60);
         mins.innerHTML = pad(time.getMinutes());
         secs.innerHTML = pad(time.getSeconds());
         cents.innerHTML = pad(Math.floor(time.getMilliseconds() / 10));
@@ -53,6 +53,6 @@ var ss = document.getElementsByClassName('stopwatch');
 
         currentTimer = 0;
 
-      hour.innerHTML = mins.innerHTML = secs.innerHTML = cents.innerHTML = pad(0);
+      hours.innerHTML = mins.innerHTML = secs.innerHTML = cents.innerHTML = pad(0);
     }
 });
