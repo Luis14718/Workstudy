@@ -52,7 +52,7 @@ if (x==null || x=="")
 var x=document.forms["myform"]["password"].value;
 if (x==null || x=="")
   {
-  alert("Password must be filled out");
+  alert("password must be filled out");
   return false;
   }
 }

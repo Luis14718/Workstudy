@@ -30,7 +30,7 @@
 	
 	
 	//Create query
-	$qry="SELECT * FROM user WHERE username='$login' AND password='$password'";
+	$qry="SELECT * FROM login WHERE username='$login' AND password='$password'";
 	//$qry="SELECT * FROM user WHERE username='admin' AND password='admin'";
 	$result=mysqli_query($bd,$qry);
 
@@ -40,15 +40,15 @@
 			//Login Successful
 			session_regenerate_id();
 			$member = mysqli_fetch_assoc($result);
-			$_SESSION['SESS_MEMBER_ID'] = $member['department'];
+			$_SESSION['SESS_MEMBER_ID'] = $member['permiso'];
 			$_SESSION['SESS_FIRST_NAME'] = $member['username'];
 			$_SESSION['SESS_PRO_PIC'] = $member['name'] .' '. $member['lastname'];
 			session_write_close();
-			header("location: br.php");
+			header("location: home.html");
 			exit();
 		}else {
 			//Login failed
-			header("location: index.php");
+			header("location: login.php");
 			exit();
 		}
 	}else {
