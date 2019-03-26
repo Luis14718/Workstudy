@@ -17,7 +17,7 @@ var ss = document.getElementsByClassName('stopwatch');
     reset.addEventListener('click', resetTimer);
 
     function pad (n) {
-        return ('00' + n).substr(-2);
+        return ('036' + n).substr(-4);
     }
 
     function update () {
@@ -28,7 +28,7 @@ var ss = document.getElementsByClassName('stopwatch');
 
         var time = new Date(currentTimer);
 		
-        hours.innerHTML = pad(time.getMinutes()/60);
+        hours.innerHTML = Math.trunc(pad(time.getMinutes()/60));
         mins.innerHTML = pad(time.getMinutes());
         secs.innerHTML = pad(time.getSeconds());
         cents.innerHTML = pad(Math.floor(time.getMilliseconds() / 10));
