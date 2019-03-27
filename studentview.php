@@ -122,7 +122,7 @@
 				<h3> Clock </h3>
 				<p>It is time to start working. 
 				Come here and start!</p>
-				<p><a href= "about.html" class= "read-more-btn"> View </a>
+				<p><a href= "stopwatch.html" class= "read-more-btn"> View </a>
 				</div>
 				
 		</div> 
