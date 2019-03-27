@@ -24,7 +24,7 @@ function add() {
 function timer() {
     t = setTimeout(add, 1000);
 }
-timer();
+
 
 
 /* Start button */
@@ -37,6 +37,7 @@ stop.onclick = function() {
 
 /* Clear button */
 reset.onclick = function() {
+    clearTimeout(t);
     h1.textContent = "00:00:00";
     seconds = 0; minutes = 0; hours = 0;
 }
