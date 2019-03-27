@@ -44,7 +44,7 @@
 			$_SESSION['SESS_FIRST_NAME'] = $member['username'];
 			$_SESSION['SESS_PRO_PIC'] = $member['name'] .' '. $member['lastname'];
 			session_write_close();
-			header("location: home.html");
+			header("location: studentview.php");
 			exit();
 		}else {
 			//Login failed
