@@ -42,12 +42,11 @@
 					</div>
 				</div>
 				<div class="col-lg-8 col-md-9">
-					<a href="" class="site-btn header-btn">Get in touch</a>
+					<a href="" class="site-btn header-btn">Log Out</a>
 					<nav class="main-menu">
 						<ul>
-							<li><a href="home.html">Home</a></li>
-							<li><a href="about.heml">About</a></li>
-							<li><a href="home-2.html">Work</a></li>
+							<li><a href="stopwatch.html">Stop-Watch</a></li>
+							<li><a href="newsletter.html">Newsletter</a></li>
 							<li><a href="contact.html">Contact</a></li>
 						</ul>
 					</nav>
@@ -129,9 +128,18 @@
 		</div> 
 	</div>
 	</section>
+	
+	
+	<footer class="footer-section text-center">
+			
+			<div class="credits">
+				<h3><span>Keiser University Latin American Campus</span></h3>
+				<p>Daniel Rodriguez, Juan Bosco, Gandy Domínguez</p>
+
 		</div>
 	</footer>
-	<!-- footer section end -->
+		
+
 
 
 	<!--====== Javascripts & Jquery ======-->
