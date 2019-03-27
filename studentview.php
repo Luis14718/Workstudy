@@ -42,7 +42,7 @@
 					</div>
 				</div>
 				<div class="col-lg-8 col-md-9">
-					<a href="" class="site-btn header-btn">Log Out</a>
+					<a href="index.php" class="site-btn header-btn">Log Out</a>
 					<nav class="main-menu">
 						<ul>
 							<li><a href="stopwatch.html">Stop-Watch</a></li>
