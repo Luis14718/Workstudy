@@ -4,9 +4,8 @@
 	<title>Student View</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="Riddle - Portfolio Template">
-	<meta name="keywords" content="portfolio, riddle, onepage, creative, html">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
+	<link href="img/favicon.ico" rel="shortcut icon"/>
 
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700" rel="stylesheet">
