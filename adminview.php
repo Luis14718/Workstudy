@@ -120,7 +120,7 @@
 				<h3> Newsletter </h3>
 				<p>It is time to start working. 
 				Come here and start!</p>
-				<p><a href= "stopwatch.html" class= "read-more-btn"> View </a>
+				<p><a href= "newsletter2.php" class= "read-more-btn"> View </a>
 				</div>
 				
 				<div class="col-md-3 text-center">
