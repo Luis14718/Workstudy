@@ -124,7 +124,7 @@
 				</div>
 				<h3> QR code </h3>
 				<p>It is time to start working. 
-				Use this feaature to control who is working</p>
+				Use this feature to control who is working</p>
 				<p><a href= "stopwatch.html" class= "read-more-btn"> View </a>
 				</div>
 				
