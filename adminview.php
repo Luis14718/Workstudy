@@ -42,12 +42,6 @@
 				</div>
 				<div class="col-lg-8 col-md-9">
 					<a href="index.php" class="site-btn header-btn">Log Out</a>
-					<nav class="main-menu">
-						<ul>
-							<li><a href="newsletter.html">Newsletter</a></li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul>
-					</nav>
 				</div>
 			</div>
 		</div>
@@ -81,7 +75,7 @@
 				<div class="col-md-3 text-center">
 				
 				<div class="icon"> 
-				<i class="fas fa-id-badge"></i>
+				<i class="far fa-chart-bar"></i>
 				</div>
 				<h3> Student 
 				<br>Statistics</br> </h3>
@@ -97,7 +91,7 @@
 				</div>
 				<h3>  Manage Students Report </h3>
 				<p>Here you can find the Monthly hours report of the students. </p>
-				<p><a href= "" class= "read-more-btn"> View </a>
+				<p><a href= "StudentsReports.php" class= "read-more-btn"> View </a>
 				</div>
 				
 				
@@ -121,9 +115,6 @@
 				<h3> Newsletter </h3>
 				<p>Publish Job Offers and activities of your deparment. Let the Students know your deparment! </p>
 				<p><a href= "stopwatch.html" class= "read-more-btn"> View </a>
-				<p>It is time to start working. 
-				Come here and start!</p>
-				<p><a href= "newsletter2.php" class= "read-more-btn"> View </a>
 				</div>
 				
 				<div class="col-md-3 text-center">
