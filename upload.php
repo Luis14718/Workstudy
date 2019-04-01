@@ -1,5 +1,4 @@
 <?php
-
-print_r($_FILES);
+$name= $FILES['fileToUpload']['name'];
 
 ?>
