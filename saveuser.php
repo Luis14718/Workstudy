@@ -1,5 +1,6 @@
 <?php
 include('config.php');
+include('connect');
 
 $sql="INSERT INTO user (name, lastname,, username, password)
 VALUES
