@@ -77,6 +77,18 @@ if (x==null || x=="")
     </form>
 </div>
 <div>
+<table align= "center">
+  <td> register <a rel="facebox" href="register.php">here</a></td>
+  </tr>
+</table>
+</div>
+
+
+
+
+
+
+
 
 </body>
 </html>
