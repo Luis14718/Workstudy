@@ -81,10 +81,11 @@
 				<div class="col-md-3 text-center">
 				
 				<div class="icon"> 
-				<i class="fas fa-user-graduate"></i>
+				<i class="fas fa-id-badge"></i>
 				</div>
-				<h3> Student Status </h3>
-				<p>This is an example, of the student stats. Here is the profile of the student. Where is working, schedule, and others </p>
+				<h3> Student 
+				<br>Statistics</br> </h3>
+				<p>Here is the profile of the student, it's schedule, and Stat</p>
 				<p><a href= "studentstats.php" class= "read-more-btn"> View </a> 
 				</div>
 		
@@ -92,10 +93,10 @@
 				<div class="col-md-3 text-center">
 				
 				<div class="icon"> 
-				<i class="far fa-address-book"></i>
+				<i class="fas fa-users-cog"></i>
 				</div>
 				<h3>  Manage Students Report </h3>
-				<p>This is an example, of the student report. Here is the report of the student. Hours montly... </p>
+				<p>Here you can find the Monthly hours report of the students. </p>
 				<p><a href= "" class= "read-more-btn"> View </a>
 				</div>
 				
@@ -103,11 +104,11 @@
 				<div class="col-md-3 text-center">
 				
 				<div class="icon"> 
-				<i class="fas fa-send-o"></i>
+				<i class="far fa-id-card"></i>
 				</div>
 				<h3> Send  Studens  Reports</h3>
-				<p>Send report to the office
-				If you have any issue please feel free to contact us</p>
+				
+				<p>Send the Students reports to Human  Resources Office</p>
 				<p><a href= "contact.html" class= "read-more-btn"> View </a>
 				</div>
 				
@@ -115,9 +116,11 @@
 				<div class="col-md-3 text-center">
 				
 				<div class="icon"> 
-				<i class="fas fa-clock"></i>
+				<i class="far fa-newspaper"></i>
 				</div>
 				<h3> Newsletter </h3>
+				<p>Publish Job Offers and activities of your deparment. Let the Students know your deparment! </p>
+				<p><a href= "stopwatch.html" class= "read-more-btn"> View </a>
 				<p>It is time to start working. 
 				Come here and start!</p>
 				<p><a href= "newsletter2.php" class= "read-more-btn"> View </a>
@@ -130,7 +133,7 @@
 				</div>
 				<h3> QR code </h3>
 				<p>It is time to start working. 
-				Come here and start!</p>
+				Use this feaature to control who is working</p>
 				<p><a href= "stopwatch.html" class= "read-more-btn"> View </a>
 				</div>
 				
@@ -153,7 +156,7 @@
 			
 			<div class="credits">
 				<h3><span>Keiser University Latin American Campus</span></h3>
-				<p>Daniel Rodriguez, Juan Bosco, Gandy DomĂ­nguez</p>
+				<p>Daniel Rodriguez, Juan Bosco, Gandy Domínguez</p>
 
 		</div>
 	</footer>
