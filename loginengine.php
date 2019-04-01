@@ -31,8 +31,11 @@
 	
 	//Create query
 	$qry="SELECT * FROM login WHERE username='$login' AND password='$password'";
-
-	$result=mysqli_query($bd,$qry);
+	$qry2="SELECT * FROM login WHERE username='$login' AND permiso='admin'";
+	$qry3="SELECT * FROM login WHERE username='$login' AND permiso='student'";
+		$result=mysqli_query($bd,$qry);
+		$result1=mysqli_query($bd,$qry2);
+        $result2=mysqli_query($bd,$qry3);
 
 	//Check whether the query was successful or not
 	if($result) {
@@ -44,8 +47,15 @@
 			$_SESSION['SESS_FIRST_NAME'] = $member['username'];
 			$_SESSION['SESS_PRO_PIC'] = $member['name'] .' '. $member['lastname'];
 			session_write_close();
-			header("location: studentview.php");
-			exit();
+			if (mysqli_num_rows($result1) > 0){
+				header("location: adminview.php");
+				exit();
+			}
+		     if(mysqli_num_rows($result2) > 0) {
+
+				header("location: studentview.php");
+				exit();
+			}
 		}else {
 			//Login failed
 			header("location: index.php");
