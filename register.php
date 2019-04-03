@@ -16,11 +16,14 @@ LastName:<br />
 Username:<br />
 <input name="username" type="text" id="username" />
 <br />
+Student ID:<br />
+<input name="userid" type="INT" id="userid" />
+<br />
 Password:<br />
 <input name="password" type="password" id="password" />
 <br /><br />
 <label>
-<input type="submit" name="" value="Save" />
+<input class="site-btn" type="submit" name="" value="Save" />
 </label>
 </form>
 </body>
