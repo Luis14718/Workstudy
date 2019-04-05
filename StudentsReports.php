@@ -40,8 +40,7 @@
 					<p><a href="index.php" class="site-btn header-btn">Log Out</a></p>
 					<nav class="main-menu">
 						<ul>
-							<li><a href="studentview.php">Home</a></li>
-							<li><a href="stopwatch.html">Stop-Watch</a></li>
+							<li><a href="adminview.php">Home</a></li>
 							<li><a href="home.html">Newsletter</a></li>
 							<li><a href="contact.html">Contact</a></li>
 					  </ul>
@@ -59,87 +58,71 @@
 			<div class="row">
 				<div class="col-xl-10 offset-xl-1">
 					<h2 class="section-title"><span>Seahawks</span></h2>
-					<h2 class="section-title"> Work-Study Hours Counter</h2>
+					<h2 class="section-title"> Students Reports </h2>
 				</div>
 			</div>
 		</div>
 	</section>
-	
-	<section class="portfolio-section">
-		<div class="container">
-			<ul class="portfolio-filter controls">
-				<li class="control" data-filter="all">All</li>
-				<li class="control" data-filter=".web">Marketing office</li>
-				<li class="control" data-filter=".digital">Bussiness office</li>
-				<li class="control" data-filter=".rened">Library</li>
-				<li class="control" data-filter=".brand">It office		</li>
-			</ul>
-		</div>                       
-		<div class="container-fluid p-md-0 ">
-			<div class="row portfolios-area">
-				<div class="mix col-lg-6 col-md-6 web">
-					<a href="img/portfolio/1.jpg" class="portfolio-item set-bg" data-setbg="img/portfolio/1.jpg">
-						<div class="pi-inner">
-							<h2>+ Show</h2>
-						</div>						
-					</a>
-				</div>
-				<div class="mix col-lg-6 col-md-6 digital">
-					<a href="img/portfolio/2.jpg" class="portfolio-item set-bg " data-setbg="img/portfolio/2.jpg">
-						<div class="pi-inner">
-							<h2>+ Show</h2>
-						</div>						
-					</a>
-				</div>
-				<div class="mix col-lg-4 col-md-6 web">
-					<a href="img/portfolio/3.jpg" class="portfolio-item set-bg" data-setbg="img/portfolio/3.jpg">
-						<div class="pi-inner">
-							<h2>+ Show</h2>
-						</div>						
-					</a>
-				</div>
-				<div class="mix col-lg-4 col-md-6 digital">
-					<a href="img/portfolio/4.jpg" class="portfolio-item set-bg" data-setbg="img/portfolio/4.jpg">
-						<div class="pi-inner">
-							<h2>+ Show</h2>
-						</div>						
-					</a>
-				</div>
-				<div class="mix col-lg-4 col-md-6 rened">
-					<a href="img/portfolio/5.jpg" class="portfolio-item set-bg" data-setbg="img/portfolio/5.jpg">
-						<div class="pi-inner">
-							<h2>+ Show</h2>
-						</div>						
-					</a>
-				</div>
-				<div class="mix col-lg-12 col-md-6 brand">
-					<a href="img/portfolio/6.jpg" class="portfolio-item set-bg" data-setbg="img/portfolio/6.jpg">
-						<div class="pi-inner">
-							<h2>+ Show</h2>
-						</div>						
-					</a>
-				</div>
-				<div class="mix col-lg-6 col-md-6 rened">
-					<a href="img/portfolio/7.jpg" class="portfolio-item set-bg" data-setbg="img/portfolio/7.jpg">
-						<div class="pi-inner">
-							<h2>+ Show</h2>
-						</div>						
-					</a>
-				</div>
-				<div class="mix col-lg-6 col-md-6 brand">
-					<a href="img/portfolio/8.jpg" class="portfolio-item set-bg" data-setbg="img/portfolio/8.jpg">
-						<div class="pi-inner">
-							<h2>+ Show</h2>
-						</div>						
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
-	
+
+
+<div class="table-scrol">
+    <h1 align="center">Work-Study Information</h1>
+
+<div class="table-responsive"><!--this is used for responsive display in mobile and other devices-->
+
+
+    <table class="table table-bordered table-hover table-striped" style="table-layout: fixed">
+        <thead>
+
+        <tr>
+
+            <th>Student Id</th>
+            <th>Username</th>
+			<th>Name</th>
+			<th>Lastname</th>
+            <th>E-mail</th>
+			<th>Deparment</th>
+            <th>Delete User</th>
+        </tr>
+        </thead>
+
+        <?php
+        include("connect.php");
+        $view_users_query="select * from login";//select query for viewing users.
+        $run=mysqli_query($bd,$view_users_query);//here run the sql query.
+
+        while($row=mysqli_fetch_array($run))//while look to fetch the result and store in a array $row.
+        {
+            $ID=$row[0];
+            $username=$row[1];
+            $name=$row[2];
+            $lastname=$row[3];
+			$Email=$row[4];
+            $deparment=$row[5];
+
+
+
+        ?>
+
+        <tr>
+<!--here showing results in the table -->
+            <td><?php echo $ID;  ?></td>
+            <td><?php echo $username;  ?></td>
+            <td><?php echo $name;  ?></td>
+            <td><?php echo $lastname;  ?></td>
+			<td><?php echo $Email;  ?></td>
+			<td><?php echo $Deparment;  ?></td>
+            <td><a href="delete.php?del=<?php echo $ID ?>"><button class="btn btn-danger">Delete</button></a></td> <!--btn btn-danger is a bootstrap button to show danger-->
+        </tr>
+
+        <?php } ?>
+
+    </table>
+        </div>
+</div>
+
 	<footer class="footer-section text-center">
 		<div class="container">
-			<h2 class="section-title mb-5">Let's find your ideal Job </h2>
 			<a href="" class="site-btn">Log Out</a>
 			<div class="credits">
 				<h3><span>Keiser University Latin American Campus</span></h3>
