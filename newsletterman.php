@@ -1,3 +1,20 @@
+<?php 
+session_start();
+$username= $_SESSION['SESS_FIRST_NAME'];
+
+include("connect.php");
+        $view_users_query="select * from login";//select query for viewing users.
+        $run=mysqli_query($bd,$view_users_query);//here run the sql query.
+
+        while($row=mysqli_fetch_array($run))//while look to fetch the result and store in a array $row.
+        {
+           
+            $deparment=$row[7];
+
+		}
+	echo"$deparment";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -96,7 +113,7 @@
       }
       
       if(empty($errors)==true){
-         move_uploaded_file($file_tmp,"img/blog/".$file_name);
+         move_uploaded_file($file_tmp,"img/blog/".$deparment);
          echo "Success";
       }else{
          print_r($errors);
