@@ -111,7 +111,7 @@
 			 <td><?php echo $Student_ID;  ?></td>
             <td><?php echo $name;  ?></td>
             <td><?php echo $lastname;  ?></td>
-			<td><?php echo $Deparment;  ?></td>
+			<td><?php echo $deparment;  ?></td>
             <td><a href="delete.php?del=<?php echo $ID ?>"><button class="btn btn-danger">Delete</button></a></td> <!--btn btn-danger is a bootstrap button to show danger-->
         </tr>
 
