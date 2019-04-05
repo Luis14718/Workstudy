@@ -76,11 +76,11 @@
 
         <tr>
 
-            <th>ID</th>
+            <th>Student Id</th>
             <th>Username</th>
-			<th>Student ID</th>
 			<th>Name</th>
 			<th>Lastname</th>
+            <th>E-mail</th>
 			<th>Deparment</th>
             <th>Delete User</th>
         </tr>
@@ -95,10 +95,10 @@
         {
             $ID=$row[0];
             $username=$row[1];
-			$Student_ID=$row[3];
-            $name=$row[5];
-            $lastname=$row[6];
-            $deparment=$row[7];
+            $name=$row[2];
+            $lastname=$row[3];
+			$Email=$row[4];
+            $deparment=$row[5];
 
 
 
@@ -108,10 +108,10 @@
 <!--here showing results in the table -->
             <td><?php echo $ID;  ?></td>
             <td><?php echo $username;  ?></td>
-			 <td><?php echo $Student_ID;  ?></td>
             <td><?php echo $name;  ?></td>
             <td><?php echo $lastname;  ?></td>
-			<td><?php echo $deparment;  ?></td>
+			<td><?php echo $Email;  ?></td>
+			<td><?php echo $Deparment;  ?></td>
             <td><a href="delete.php?del=<?php echo $ID ?>"><button class="btn btn-danger">Delete</button></a></td> <!--btn btn-danger is a bootstrap button to show danger-->
         </tr>
 
