@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Manager Page</title>
+	<title>Student View</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="Riddle - Portfolio Template">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,10 +18,6 @@
 	<link rel="stylesheet" href="css/style.css"/>
 
 
-	<!--[if lt IE 9]>
-	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
 
 </head>
 
@@ -42,6 +38,13 @@
 				</div>
 				<div class="col-lg-8 col-md-9">
 					<a href="index.php" class="site-btn header-btn">Log Out</a>
+					<nav class="main-menu">
+						<ul>
+							<li><a href="stopwatch.html">Stop-Watch</a></li>
+							<li><a href="newsletter.html">Newsletter</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
 				</div>
 			</div>
 		</div>
@@ -56,7 +59,7 @@
 		<div class="container text-center">
 			<div class="row">
 				<div class="col-xl-10 offset-xl-1">
-					<h2 class="section-title">Manager <span>View</span></h2>
+					<h2 class="section-title">Newsletter</h2>
 				</div>
 			</div>
 		</div>
@@ -72,70 +75,42 @@
 		</div>
 		
 		<div class= "row">
-				<div class="col-md-3 text-center">
-				
-				<div class="icon"> 
-				<i class="far fa-chart-bar"></i>
+		<div class="col-md-3">
+				<h3>Upload your file</h3>
 				</div>
-				<h3> Student 
-				<br>Statistics</br> </h3>
-				<p>Here is the profile of the student, it's schedule, and Stat</p>
-				<p><a href= "studentstats.php" class= "read-more-btn"> View </a> 
-				</div>
+				<?php
+   if(isset($_FILES['image'])){
+      $errors= array();
+      $file_name = $_FILES['image']['name'];
+      $file_size =$_FILES['image']['size'];
+      $file_tmp =$_FILES['image']['tmp_name'];
+      $file_type=$_FILES['image']['type'];
+      
+      
+      $extensions= array("jpeg","jpg","png");
+      
+      
+      
+      if($file_size > 2097152){
+         $errors[]='File size must be excately 2 MB';
+      }
+      
+      if(empty($errors)==true){
+         move_uploaded_file($file_tmp,"img/blog/".$file_name);
+         echo "Success";
+      }else{
+         print_r($errors);
+      }
+   }
+?>
+
+      <form action="" method="POST" enctype="multipart/form-data">
+         <input class=""type="file" name="image" />
+         <input class="site-btn" type="submit"/>
+      </form>
+      
+
 		
-		
-				<div class="col-md-3 text-center">
-				
-				<div class="icon"> 
-				<i class="fas fa-users-cog"></i>
-				</div>
-				<h3>  Manage Students Report </h3>
-				<p>Here you can find the Monthly hours report of the students. </p>
-				<p><a href= "StudentsReports.php" class= "read-more-btn"> View </a>
-				</div>
-				
-				
-				<div class="col-md-3 text-center">
-				
-				<div class="icon"> 
-				<i class="far fa-id-card"></i>
-				</div>
-				<h3> Send  Studens  Reports</h3>
-				
-				<p>Send the Students reports to Human  Resources Office</p>
-				<p><a href= "contact.html" class= "read-more-btn"> View </a>
-				</div>
-				
-				
-				<div class="col-md-3 text-center">
-				
-				<div class="icon"> 
-				<i class="far fa-newspaper"></i>
-				</div>
-				<h3> Newsletter </h3>
-				<p>Publish Job Offers and activities of your deparment. Let the Students know your deparment! </p>
-				<p><a href= "newsletterman.php" class= "read-more-btn"> View </a>
-				</div>
-				
-				<div class="col-md-3 text-center">
-				
-				<div class="icon"> 
-				<i class="fas fa-qrcode"></i>
-				</div>
-				<h3> QR code </h3>
-				<p>It is time to start working. 
-				Use this feature to control who is working</p>
-				<p><a href= "stopwatch.html" class= "read-more-btn"> View </a>
-				</div>
-				
-				
-				
-				
-				
-				
-				
-				
-				
 				
 				
 		</div> 

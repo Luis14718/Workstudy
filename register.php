@@ -22,6 +22,9 @@ Student ID:<br />
 Password:<br />
 <input name="password" type="password" id="password" />
 <br /><br />
+Department:<br />
+<input name="department" type="text" id="password" />
+<br /><br />
 <label>
 <input class="site-btn" type="submit" name="" value="Save" />
 </label>
