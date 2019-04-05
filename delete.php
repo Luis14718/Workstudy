@@ -1,18 +1,12 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Ehtesham Mehmood
- * Date: 11/24/2014
- * Time: 11:55 PM
- */
-include("database/db_conection.php");
+
+include("connect.php");
 $delete_id=$_GET['del'];
-$delete_query="delete  from users WHERE id='$delete_id'";//delete query
+$delete_query="delete  from users WHERE id='$delete_id'";
 $run=mysqli_query($bd,$delete_query);
 if($run)
 {
-//javascript function to open in the same window
-    echo "<script>window.open('view_users.php?deleted=user has been deleted','_self')</script>";
+    echo "<script>window.open('StudentReports.php?deleted=user has been deleted','_self')</script>";
 }
 
 ?>
