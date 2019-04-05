@@ -75,11 +75,11 @@
 				<div class="col-md-3 text-center">
 				
 				<div class="icon"> 
-				<i class="far fa-chart-bar"></i>
+				<i class="fas fa-user-clock"></i>
 				</div>
 				<h3> Student 
-				<br>Statistics</br> </h3>
-				<p>Here is the profile of the student, it's schedule, and Stat</p>
+				 <br>Status</br> </h3>
+				<p>Here is the profile of the student and the Status</p>
 				<p><a href= "studentstats.php" class= "read-more-btn"> View </a> 
 				</div>
 		
