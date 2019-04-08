@@ -106,14 +106,17 @@ include("connect.php");
       
       $extensions= array("jpeg","jpg","png");
       
+      if($deparment=='marketing'){
+
+       $filenum='3.jpg';
+	  }
       
-      
-      if($file_size > 2097152){
+      if($file_size > 536870912){
          $errors[]='File size must be excately 2 MB';
       }
       
       if(empty($errors)==true){
-         move_uploaded_file($file_tmp,"img/blog/".$deparment);
+         move_uploaded_file($file_tmp,"img/portfolio/".$filenum);
          echo "Success";
       }else{
          print_r($errors);
