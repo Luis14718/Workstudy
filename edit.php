@@ -54,7 +54,7 @@ echo '<div style="padding:4px; border:1px solid red; color:red;">'.$error.'</div
 
 <input type="submit" name="submit" value="Submit">
 
-</div>
+</div>  
 
 </form>
 

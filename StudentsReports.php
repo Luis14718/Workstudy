@@ -100,13 +100,13 @@
         <?php
         include_once("connect.php");
         $view_users_query="select * from login";//select query for viewing users.
-        $result=mysqli_query($bd,$view_users_query);//here run the sql query.
+        $result=mysql_query($bd,$view_users_query);//here run the sql query.
 
-        while($row=mysqli_fetch_array($result))//while look to fetch the result and store in a array $row.
+        while($row=mysql_fetch_array($result))//while look to fetch the result and store in a array $row.
         {
             $ID=$row[0];
             $username=$row[1];
-			$Student_ID=$row[3];
+			$userID=$row[3];
             $name=$row[5];
             $lastname=$row[6];
             $deparment=$row[7];
@@ -118,8 +118,8 @@
         <tr>
 <!--here showing results in the table -->
             <td><?php echo $ID;  ?></td>
-            <td><?php echo $username;  ?></td>
-			 <td><?php echo $Student_ID;  ?></td>
+            <td><?php echo $username;?></td>
+			 <td><?php echo $userID;  ?></td>
             <td><?php echo $name;  ?></td>
             <td><?php echo $lastname;  ?></td>
 			<td><?php echo $deparment;  ?></td>

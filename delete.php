@@ -12,25 +12,25 @@ Deletes a specific entry from the 'players' table
 
 // connect to the database
 
-include('connect-db.php');
+include('connect.php');
 
 
 
 // check if the 'id' variable is set in URL, and check that it is valid
 
-if (isset($_GET['id']) && is_numeric($_GET['id']))
+if (isset($_GET['ID']) && is_numeric($_GET['ID']))
 
 {
 
 // get id value
 
-$id = $_GET['id'];
+$ID = $_GET['ID'];
 
 
 
 // delete the entry
 
-$result = mysql_query("DELETE FROM players WHERE id=$id")
+$result = mysql_query("DELETE FROM players WHERE ID=$ID")
 
 or die(mysql_error());
 
@@ -38,7 +38,7 @@ or die(mysql_error());
 
 // redirect back to the view page
 
-header("Location: view.php");
+header("Location: StudentsReports.php");
 
 }
 
@@ -48,7 +48,7 @@ else
 
 {
 
-header("Location: view.php");
+header("Location: StudentsReports.php");
 
 }
 
