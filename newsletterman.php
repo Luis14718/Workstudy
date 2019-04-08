@@ -1,5 +1,6 @@
 <?php 
 session_start();
+
 $username= $_SESSION['SESS_FIRST_NAME'];
 
 include("connect.php");
