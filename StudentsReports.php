@@ -22,11 +22,10 @@
 
 </head>
 <body>
-	
-	<div id="preloder">
+
+       <div id="preloder">
 		<div class="loader"></div>
 	</div>
-
 
 	<header class="header-section">
 		<div class="container">
@@ -100,9 +99,9 @@
         <?php
         include_once("connect.php");
         $view_users_query="select * from login";//select query for viewing users.
-        $result=mysql_query($bd,$view_users_query);//here run the sql query.
+        $result=mysqli_query($bd,$view_users_query);//here run the sql query.
 
-        while($row=mysql_fetch_array($result))//while look to fetch the result and store in a array $row.
+        while($row=mysqli_fetch_array($result))//while look to fetch the result and store in a array $row.
         {
             $ID=$row[0];
             $username=$row[1];
@@ -138,7 +137,7 @@
 			<a href="" class="site-btn">Log Out</a>
 			<div class="credits">
 				<h3><span>Keiser University Latin American Campus</span></h3>
-				<p>Daniel Rodriguez, Juan Bosco, Gandy Donguez</p>
+				<p>Daniel Rodriguez, Juan Bosco, Gandy Domínguez</p>
 			</div>
 
 		</div>
