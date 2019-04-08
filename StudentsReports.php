@@ -61,15 +61,26 @@
 					<h2 class="section-title"> Students Reports </h2>
 				</div>
 			</div>
+			</br>
 		</div>
+		<div class="container text-center">
+		<div class="row">
+				<div class="col-xl-10 offset-xl-1">
+		 <h1 align="center">Work-Study Information</h1>
+		 </br>
+	<a href="add.php" class="site-btn" align="center">Add new student</a>
+	</div>
+	</div>
+	</div>
+		
 	</section>
 
-
+<section>
 <div class="table-scrol">
-    <h1 align="center">Work-Study Information</h1>
-
-<div class="table-responsive"><!--this is used for responsive display in mobile and other devices-->
-
+   
+	  
+	 
+   <div class="table-responsive">
 
     <table class="table table-bordered table-hover table-striped" style="table-layout: fixed">
         <thead>
@@ -82,20 +93,20 @@
 			<th>Name</th>
 			<th>Lastname</th>
 			<th>Deparment</th>
-            <th>Delete User</th>
+            <th>Manage Users</th>
         </tr>
         </thead>
 
         <?php
-        include("connect.php");
+        include_once("connect.php");
         $view_users_query="select * from login";//select query for viewing users.
-        $run=mysqli_query($bd,$view_users_query);//here run the sql query.
+        $result=mysql_query($bd,$view_users_query);//here run the sql query.
 
-        while($row=mysqli_fetch_array($run))//while look to fetch the result and store in a array $row.
+        while($row=mysql_fetch_array($result))//while look to fetch the result and store in a array $row.
         {
             $ID=$row[0];
             $username=$row[1];
-			$Student_ID=$row[3];
+			$userID=$row[3];
             $name=$row[5];
             $lastname=$row[6];
             $deparment=$row[7];
@@ -107,12 +118,12 @@
         <tr>
 <!--here showing results in the table -->
             <td><?php echo $ID;  ?></td>
-            <td><?php echo $username;  ?></td>
-			 <td><?php echo $Student_ID;  ?></td>
+            <td><?php echo $username;?></td>
+			 <td><?php echo $userID;  ?></td>
             <td><?php echo $name;  ?></td>
             <td><?php echo $lastname;  ?></td>
 			<td><?php echo $deparment;  ?></td>
-            <td><a href="delete.php?del=<?php echo $ID ?>"><button class="btn btn-danger">Delete</button></a></td> <!--btn btn-danger is a bootstrap button to show danger-->
+            <<td><a href="edit.php?ID=' . $row['ID'] . '">Edit</ <td>  |  <a href="delete.php?ID=' . $row['ID'] . '">Delete</a></td>';
         </tr>
 
         <?php } ?>
@@ -120,13 +131,14 @@
     </table>
         </div>
 </div>
+</section>
 
 	<footer class="footer-section text-center">
 		<div class="container">
 			<a href="" class="site-btn">Log Out</a>
 			<div class="credits">
 				<h3><span>Keiser University Latin American Campus</span></h3>
-				<p>Daniel Rodriguez, Juan Bosco, Gandy Domínguez</p>
+				<p>Daniel Rodriguez, Juan Bosco, Gandy Donguez</p>
 			</div>
 
 		</div>
