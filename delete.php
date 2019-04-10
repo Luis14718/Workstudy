@@ -1,43 +1,12 @@
 <?php
-
-include("connect.php");
-include("StudentsReports.php");
-$delete_id=$_GET['del'];
-$delete_query="delete  from users WHERE id='$delete_id'";
-$run=mysqli_query($bd,$delete_query);
-if($run)
-{
-
-// get id value
-
-$ID = $_GET['ID'];
+				include('connect.php');
+				$get=$_GET['id'];
+				$result = mysqli_query($bd,"delete from login where ID='$get'");
+				echo "Deleted " . mysqli_affected_rows($bd);	
+			    mysqli_close($bd);
+				header('location:StudentsReports.php');
+				exit();
+			
+?> 
 
 
-
-// delete the entry
-
-$result = mysql_query("DELETE FROM players WHERE ID=$ID")
-
-or die(mysql_error());
-
-
-
-// redirect back to the view page
-
-header("Location: StudentsReports.php");
-
-}
-
-else
-
-// if id isn't set, or isn't valid, redirect back to view page
-
-{
-
-header("Location: StudentsReports.php");
-
-}
-
-
-
-?>
