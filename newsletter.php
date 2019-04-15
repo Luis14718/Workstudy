@@ -47,7 +47,8 @@
 						<ul>
 							<li><a href="studentview.php">Home</a></li>
 							<li><a href="stopwatch.html">Stop-Watch</a></li>
-							<li><a href="contact.html">Contact</a></li>
+							
+							
 					  </ul>
 				  </nav>
 			  </div>
@@ -147,7 +148,7 @@
 			<a href="" class="site-btn">Log Out</a>
 			<div class="credits">
 				<h3><span>Keiser University Latin American Campus</span></h3>
-				<p>Daniel Rodriguez, Juan Bosco, Gandy Domínguez</p>
+				<p>Daniel Rodriguez, Juan Bosco, Gandy Dominguez</p>
 			</div>
 
 		</div>
