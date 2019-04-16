@@ -6,15 +6,4 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Zxing\\' => array($vendorDir . '/khanamiryan/qrcode-detector-decoder/lib'),
-    'Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),
-    'Symfony\\Contracts\\' => array($vendorDir . '/symfony/contracts'),
-    'Symfony\\Component\\Translation\\' => array($vendorDir . '/symfony/translation'),
-    'Respect\\Validation\\' => array($vendorDir . '/respect/validation/library'),
-    'Illuminate\\Support\\' => array($vendorDir . '/illuminate/support'),
-    'Illuminate\\Database\\' => array($vendorDir . '/illuminate/database'),
-    'Illuminate\\Contracts\\' => array($vendorDir . '/illuminate/contracts'),
-    'Illuminate\\Container\\' => array($vendorDir . '/illuminate/container'),
-    'Doctrine\\Common\\Inflector\\' => array($vendorDir . '/doctrine/inflector/lib/Doctrine/Common/Inflector'),
-    '' => array($vendorDir . '/nesbot/carbon/src'),
 );

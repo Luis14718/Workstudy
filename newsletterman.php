@@ -1,6 +1,6 @@
 <?php 
 session_start();
-$username= $_SESSION['SESS_FIRST_NAME'];
+$department= $_SESSION['Department'];
 
 include("connect.php");
         $view_users_query="select * from login";//select query for viewing users.
@@ -12,7 +12,7 @@ include("connect.php");
             $deparment=$row[7];
 
 		}
-	echo"$deparment";
+	echo"$department";
 ?>
 
 <!DOCTYPE html>

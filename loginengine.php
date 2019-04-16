@@ -43,7 +43,7 @@
 			//Login Successful
 			session_regenerate_id();
 			$member = mysqli_fetch_assoc($result);
-			$_SESSION['SESS_MEMBER_ID'] = $member['permiso'];
+			$_SESSION['Department'] = $member['Department'];
 			$_SESSION['SESS_FIRST_NAME'] = $member['username'];
 			$_SESSION['SESS_PRO_PIC'] = $member['name'] .' '. $member['lastname'];
 			session_write_close();
