@@ -3,7 +3,7 @@
 <head>
 	<title>Student Reports Page</title>
 	<meta charset="UTF-8">
-	<meta name="description" content="Work study counter">
+	<meta name="description" content="Student Reports">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link href="img/favicon.ico" rel="shortcut icon"/>
@@ -57,7 +57,7 @@
 						<ul>
 							<li><a href="adminview.php">Home</a></li>
 							<li><a href="home.html">Newsletter</a></li>
-							<li><a href="contact.html">Contact</a></li>
+							
 					  </ul>
 				  </nav>
 			  </div>
@@ -108,6 +108,7 @@
 			<th>Name</th>
 			<th>Lastname</th>
 			<th>Deparment</th>
+			<th>Hours</th>
             <th>Manage Users</th>
         </tr>
         </thead>
@@ -126,6 +127,7 @@
 					  echo '<td><div align="center">'.$row['name'].'</div></td>';
 					  echo '<td><div align="center">'.$row['lastname'].'</div></td>';
 					  echo '<td><div align="center">'.$row['Department'].'</div></td>';
+					   echo '<td><div align="center">'.$row['Hours'].'</div></td>';
 					 
 					 
 					  echo '<td><div align="center">'.' | '.'<a rel="facebox" href=edit.php?id=' . $row["ID"] .'>Edit</a>'.' | '.'<a href=delete.php?id=' . $row["ID"] .'>Delete</a>'.'
@@ -151,7 +153,7 @@
 			<a href="index.php"class="site-btn">Log Out</a>
 			<div class="credits">
 				<h3><span>Keiser University Latin American Campus</span></h3>
-				<p>Daniel Rodriguez, Juan Bosco, Gandy Dom�nguez</p>
+				<p>Daniel Rodriguez, Juan Bosco, Gandy Dominguez</p>
 			</div>
 
 		</div>

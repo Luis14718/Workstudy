@@ -100,10 +100,10 @@
 				<div class="icon"> 
 				<i class="far fa-id-card"></i>
 				</div>
-				<h3> Send  Studens  Reports</h3>
-				
-				<p>Send the Students reports to Human  Resources Office</p>
-				<p><a href= "contact.html" class= "read-more-btn"> View </a>
+				<h3>  Download Students Report </h3>
+				<p> Download the Students reports  file in an Excell format</p>
+				<form method="post" action="export.php">
+     <input type="submit" name="export" class="read-more-btn" value="Export" />
 				</div>
 				
 				
