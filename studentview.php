@@ -52,7 +52,7 @@
 					</div>
 				</div>
 				<div class="col-lg-8 col-md-9">
-					<a href="index.php" class="site-btn header-btn">Log Out</a>
+					<a href="log out.php" class="site-btn header-btn">Log Out</a>
 					<nav class="main-menu">
 						<ul>
 							<li><a rel="facebox" href=qr.php?>Stop-Watch</a></li>
@@ -139,16 +139,17 @@
 	</div>
 	</section>
 	
-	
 	<footer class="footer-section text-center">
-			
+		<div class="container">
+			<a href="logout.php"class="site-btn">Log Out</a>
 			<div class="credits">
 				<h3><span>Keiser University Latin American Campus</span></h3>
 				<p>Daniel Rodriguez, Juan Bosco, Gandy Dominguez</p>
+			</div>
 
 		</div>
 	</footer>
-		
+
 
 
 

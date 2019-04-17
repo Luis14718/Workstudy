@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="css/font-awesome.min.css"/>
 	<link rel="stylesheet" href="css/magnific-popup.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script type="text/javascript" src="js/cufon-yui.js"></script>
 <script type="text/javascript" src="js/arial.js"></script>
 <script type="text/javascript" src="js/cuf_run.js"></script>
@@ -73,7 +73,7 @@
 			<div class="row">
 				<div class="col-xl-10 offset-xl-1">
 					<h2 class="section-title"><span>Seahawks</span></h2>
-					<h2 class="section-title"> Students Reports </h2>
+					<h2 class="section-title"> Active Students </h2>
 				</div>
 			</div>
 			</br>
@@ -83,7 +83,7 @@
 				<div class="col-xl-10 offset-xl-1">
 		 <h1 align="center">Work-Study Information</h1>
 		 </br>
-	<a  rel="facebox" href="add.php" class="site-btn" align="center">Add new student</a>
+
 	</div>
 	</div>
 	</div>
@@ -97,7 +97,7 @@
 	 
    <div class="table-responsive">
 
-    <table class="table table-bordered  table-hover table-striped" style="table-layout:auto">
+    <table id="table1" class="table table-bordered  table-hover table-striped" style="table-layout:auto">
         <thead>
 
         <tr>
@@ -160,3 +160,54 @@
 	<script src="js/magnific-popup.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
+<html>
+<script>
+$(document).ready(function(){
+<?php
+
+?>
+function update_user_activity()
+{
+ var action = 'update_time';
+ $.ajax({
+  url:"studentstatus.php",
+  method:"POST",
+  data:{action:action},
+  success:function(data)
+  {
+
+  }
+ });
+}
+setInterval(function(){ 
+ update_user_activity();
+}, 3000);
+
+
+<?php
+
+
+?>
+fetch_user_login_data();
+setInterval(function(){
+ fetch_user_login_data();
+}, 3000);
+function fetch_user_login_data()
+{
+ var action = "fetch_data";
+ $.ajax({
+  url:"studentstatus.php",
+  method:"POST",
+  data:{action:action},
+  success:function(data)
+  {
+   $('#table1').html(data);
+  }
+ });
+}
+<?php
+
+?>
+
+});
+</script>
