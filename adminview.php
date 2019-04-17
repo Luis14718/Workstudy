@@ -41,7 +41,7 @@
 					</div>
 				</div>
 				<div class="col-lg-8 col-md-9">
-					<a href="index.php" class="site-btn header-btn">Log Out</a>
+					<a href="logout.php" class="site-btn header-btn">Log Out</a>
 				</div>
 			</div>
 		</div>
@@ -80,7 +80,7 @@
 				<h3> Student 
 				 <br>Status</br> </h3>
 				<p>Here is the profile of the student and the Status</p>
-				<p><a href= "studentstats.php" class= "read-more-btn"> View </a> 
+				<p><a href= "studentstatus.php" class= "read-more-btn"> View </a> 
 				</div>
 		
 		

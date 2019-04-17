@@ -103,38 +103,29 @@
         <tr>
 
             <th>ID</th>
-            <th>Username</th>
-			<th>Student ID</th>
+            <th>Student ID</th>
+		
 			<th>Name</th>
 			<th>Lastname</th>
-			<th>Deparment</th>
-			<th>Hours</th>
-            <th>Manage Users</th>
+			<th>status</th>
         </tr>
         </thead>
 
         <?php
         include_once("connect.php");
-        $view_users_query="select * from login";//select query for viewing users.
+        $view_users_query="select * from login where status= 1";//select query for viewing users.
         $result=mysqli_query($bd,$view_users_query);//here run the sql query.
 		
         while($row=mysqli_fetch_array($result))//while look to fetch the result and store in a array $row.
         {
             echo '<tr>';
 					  echo '<td>'.$row['ID'].'</td>';
-					  echo '<td>'.$row['username'].'</td>';
+					
 					  echo '<td><div align="center">'.$row['userID'].'</div></td>';
 					  echo '<td><div align="center">'.$row['name'].'</div></td>';
 					  echo '<td><div align="center">'.$row['lastname'].'</div></td>';
-					  echo '<td><div align="center">'.$row['Department'].'</div></td>';
-					   echo '<td><div align="center">'.$row['Hours'].'</div></td>';
-					 
-					 
-					  echo '<td><div align="center">'.' | '.'<a rel="facebox" href=edit.php?id=' . $row["ID"] .'>Edit</a>'.' | '.'<a href=delete.php?id=' . $row["ID"] .'>Delete</a>'.'
+                      echo '<td><div align="center" >'.'<p style="color:#03f903"> Active</p   >
 					  </div></td>';
-					 
-					echo '</tr>';
-						
 				
 				
 						

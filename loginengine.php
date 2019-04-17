@@ -44,7 +44,10 @@
 			session_regenerate_id();
 			$member = mysqli_fetch_assoc($result);
 			$_SESSION['Department'] = $member['Department'];
-			$_SESSION['SESS_FIRST_NAME'] = $member['username'];
+			$_SESSION['ID'] = $member['ID'];
+			$id=$_SESSION['ID'];
+			mysqli_query($bd,"UPDATE `login` SET `status` = '1' WHERE `login`.`ID` = $id");
+
 			$_SESSION['SESS_PRO_PIC'] = $member['name'] .' '. $member['lastname'];
 			session_write_close();
 			if (mysqli_num_rows($result1) > 0){
