@@ -30,7 +30,9 @@
         closeImage   : 'src/closelabel.png'
       })
     })
+    
   </script>
+  <meta http-equiv="refresh" content="5">
   <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8">
 <script src="argiepolicarpio.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/application.js" type="text/javascript" charset="utf-8"></script>  
@@ -91,13 +93,13 @@
 	</section>
 
 <section>
-<div class="table-scrol">
+<div  id="table1" class="table-scrol">
    
 	  
 	 
    <div class="table-responsive">
 
-    <table id="table1" class="table table-bordered  table-hover table-striped" style="table-layout:auto">
+    <table  class="table table-bordered  table-hover table-striped" style="table-layout:auto">
         <thead>
 
         <tr>
@@ -162,52 +164,9 @@
 </body>
 <html>
 <script>
-$(document).ready(function(){
-<?php
+var delay = 3000;
 
-?>
-function update_user_activity()
-{
- var action = 'update_time';
- $.ajax({
-  url:"studentstatus.php",
-  method:"POST",
-  data:{action:action},
-  success:function(data)
-  {
-
-  }
- });
-}
-setInterval(function(){ 
- update_user_activity();
-}, 3000);
-
-
-<?php
-
-
-?>
-fetch_user_login_data();
-setInterval(function(){
- fetch_user_login_data();
-}, 3000);
-function fetch_user_login_data()
-{
- var action = "fetch_data";
- $.ajax({
-  url:"studentstatus.php",
-  method:"POST",
-  data:{action:action},
-  success:function(data)
-  {
-   $('#table1').html(data);
-  }
- });
-}
-<?php
-
-?>
-
-});
+var refreshId = setInterval(function () {
+    $('#table1'.load('studentstatus.php'));
+}, delay);
 </script>
