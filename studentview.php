@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="img/favicon.ico" rel="shortcut icon"/>
 
+
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700" rel="stylesheet">
 
@@ -16,7 +17,17 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
 	<link rel="stylesheet" href="css/style.css"/>
-
+ <link href="src/facebox.css" media="screen" rel="stylesheet" type="text/css" />
+   <script src="lib/jquery.js" type="text/javascript"></script>
+  <script src="src/facebox.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function($) {
+      $('a[rel*=facebox]').facebox({
+        loadingImage : 'src/loading.gif',
+        closeImage   : 'src/closelabel.png'
+      })
+    })
+  </script>
 
 	<!--[if lt IE 9]>
 	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -41,10 +52,10 @@
 					</div>
 				</div>
 				<div class="col-lg-8 col-md-9">
-					<a href="index.php" class="site-btn header-btn">Log Out</a>
+					<a href="logout.php" class="site-btn header-btn">Log Out</a>
 					<nav class="main-menu">
 						<ul>
-							<li><a href="stopwatch.html">Stop-Watch</a></li>
+							<li><a rel="facebox" href=qr.php?>Stop-Watch</a></li>
 							<li><a href="newsletter.html">Newsletter</a></li>
 							
 						</ul>
@@ -121,23 +132,24 @@
 				<h3> Clock </h3>
 				<p>It is time to start working. 
 				Come here and start!</p>
-				<p><a href= "stopwatch.html" class= "read-more-btn"> View </a>
+				<p><a  class= "read-more-btn"> View </a>
 				</div>
 				
 		</div> 
 	</div>
 	</section>
 	
-	
 	<footer class="footer-section text-center">
-			
+		<div class="container">
+			<a href="logout.php"class="site-btn">Log Out</a>
 			<div class="credits">
 				<h3><span>Keiser University Latin American Campus</span></h3>
 				<p>Daniel Rodriguez, Juan Bosco, Gandy Dominguez</p>
+			</div>
 
 		</div>
 	</footer>
-		
+
 
 
 

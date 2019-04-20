@@ -150,7 +150,7 @@
 
 	<footer class="footer-section text-center">
 		<div class="container">
-			<a href="index.php"class="site-btn">Log Out</a>
+			<a href="logout.php"class="site-btn">Log Out</a>
 			<div class="credits">
 				<h3><span>Keiser University Latin American Campus</span></h3>
 				<p>Daniel Rodriguez, Juan Bosco, Gandy Dominguez</p>
