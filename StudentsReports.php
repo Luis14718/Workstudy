@@ -1,3 +1,9 @@
+<?php 
+session_start();
+$department= $_SESSION['Department'];
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -115,7 +121,7 @@
 
         <?php
         include_once("connect.php");
-        $view_users_query="select * from login";//select query for viewing users.
+        $view_users_query="select * from login WHERE Department='$department'";//select query for viewing users.
         $result=mysqli_query($bd,$view_users_query);//here run the sql query.
 		
         while($row=mysqli_fetch_array($result))//while look to fetch the result and store in a array $row.
