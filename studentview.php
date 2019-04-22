@@ -1,3 +1,9 @@
+<?php
+
+session_start();
+$time= $_SESSION['Start'];
+echo"$time";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -55,7 +61,7 @@
 					<a href="logout.php" class="site-btn header-btn">Log Out</a>
 					<nav class="main-menu">
 						<ul>
-							<li><a rel="facebox" href=qr.php?>Stop-Watch</a></li>
+							<li><a  href="stopwatch.html">Stop-Watch</a></li>
 							<li><a href="newsletter.html">Newsletter</a></li>
 							
 						</ul>
@@ -97,7 +103,7 @@
 				</div>
 				<h3> Student Stats </h3>
 				<p>This is an example, of the student stats. Here is the profile of the student. Where is working, schedule, and others </p>
-				<p><a href= "studentstats.php" class= "read-more-btn"> View </a> 
+				<p><a href= "studentsst.php" class= "read-more-btn"> View </a> 
 				</div>
 		
 		
@@ -119,7 +125,11 @@
 				<h3> Clock </h3>
 				<p>It is time to start working. 
 				Come here and start!</p>
+<<<<<<< HEAD
 				<p><a href="stopwatch.html" class= "read-more-btn"> View </a>
+=======
+				<p><a href= "stopwatch.html"  class= "read-more-btn"> View </a>
+>>>>>>> dbd1ada328f75ea2aeb68776ef73bff3eb3bb74a
 				</div>
 				
 		</div> 
