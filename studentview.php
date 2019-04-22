@@ -84,13 +84,7 @@ echo"$time";
 				</div>
 			</div>
 		</div>
-	</section>
-	<!-- intro section end -->
-
-
-
-
-<section class="page-section">
+		
 		<div class="container">
 		<div class="row" align="center">
 				<div class="col-lg-12">
@@ -109,20 +103,40 @@ echo"$time";
 
         <script src="stopwatch2.js"></script>
 					</p>
-<div class="container">
-		<div class= "row h-50" >
-				<div class="col-md-4 my-auto">
+					
+					
+			</div>
+	</section>
+	<!-- intro section end -->
+	<section class="page-section">
+<div class="services"> 
+			<h1></h1>
+		</div>
+		
+		<div class="container">
+		<div class="row" align="center">
+				<div class="col-lg-12">
+            <div class="milestone">
+				
 				<div class="icon"> 
 				<i class="fas fa-user-graduate"></i>
 				</div>
 				<h3> Student Stats </h3>
-				<p>This is an example, of the student stats. Here is the profile of the student. Where is working, schedule, and others </p>
+				<p>This is an example, of the student stats.</p>
+				<p>Here is the profile of the student.<p>
+				<p>Where is working, schedule, and others <p>
 				<p><a href= "studentsst.php" class= "read-more-btn"> View </a> 
+				</div>
+				</div>
 				</div>
 
 	</div>
-	<div>
 	</section>
+
+
+
+
+		
 	
 	<footer class="footer-section text-center">
 		<div class="container">
