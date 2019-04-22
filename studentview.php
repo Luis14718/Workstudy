@@ -86,23 +86,7 @@ echo"$time";
 		</div>
 	</section>
 	<!-- intro section end -->
-<div class="services"> 
-			<h1></h1>
-		</div>
-		
-		<div  align= "center" class= "row">
-				<div class="col-md-4 text-center">
-				
-				<div class="icon"> 
-				<i class="fas fa-user-graduate"></i>
-				</div>
-				<h3> Student Stats </h3>
-				<p>This is an example, of the student stats. Here is the profile of the student. Where is working, schedule, and others </p>
-				<p><a href= "studentsst.php" class= "read-more-btn"> View </a> 
-				</div>
 
-	</div>
-	</section>
 
 
 
@@ -125,12 +109,20 @@ echo"$time";
 
         <script src="stopwatch2.js"></script>
 					</p>
-					
-					
-			</div>
-	
+<div class="container">
+		<div class= "row h-50" >
+				<div class="col-md-4 my-auto">
+				<div class="icon"> 
+				<i class="fas fa-user-graduate"></i>
+				</div>
+				<h3> Student Stats </h3>
+				<p>This is an example, of the student stats. Here is the profile of the student. Where is working, schedule, and others </p>
+				<p><a href= "studentsst.php" class= "read-more-btn"> View </a> 
+				</div>
+
+	</div>
+	<div>
 	</section>
-		
 	
 	<footer class="footer-section text-center">
 		<div class="container">
