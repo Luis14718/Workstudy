@@ -42,8 +42,15 @@
 		if(mysqli_num_rows($result) > 0) {
 			//Login Successful
 			session_regenerate_id();
+			$time= date("h:i:s");  
+			$hour= date("h");
+			$minutes=date("i");
+			$seconds=date("s");
+			$totalh=$hour+($minutes/60)+($seconds/3600);	
 			$member = mysqli_fetch_assoc($result);
 			$_SESSION['Department'] = $member['Department'];
+			$_SESSION['StudentID']=$member['us'];
+			$_SESSION['Start']= $totalh;
 			$_SESSION['ID'] = $member['ID'];
 			$id=$_SESSION['ID'];
 			mysqli_query($bd,"UPDATE `login` SET `status` = '1' WHERE `login`.`ID` = $id");
