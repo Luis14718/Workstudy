@@ -86,17 +86,12 @@ echo"$time";
 		</div>
 	</section>
 	<!-- intro section end -->
-
-
-	<!-- page section start -->
-	<section class="page-section">
-		<div class="container"> 
-		<div class="services"> 
+<div class="services"> 
 			<h1></h1>
 		</div>
 		
-		<div class= "row">
-				<div class="col-md-6 text-center">
+		<div  align= "center" class= "row">
+				<div class="col-md-4 text-center">
 				
 				<div class="icon"> 
 				<i class="fas fa-user-graduate"></i>
@@ -105,26 +100,37 @@ echo"$time";
 				<p>This is an example, of the student stats. Here is the profile of the student. Where is working, schedule, and others </p>
 				<p><a href= "studentsst.php" class= "read-more-btn"> View </a> 
 				</div>
-	
 
-				<div class="col-md-6 text-center">
-				
-				<div class="icon"> 
-				<i class="fas fa-clock"></i>
-				</div>
-				<h3> Clock </h3>
-				<p>It is time to start working. 
-				Come here and start!</p>
-<<<<<<< HEAD
-				<p><a href="stopwatch.html" class= "read-more-btn"> View </a>
-=======
-				<p><a href= "stopwatch.html"  class= "read-more-btn"> View </a>
->>>>>>> dbd1ada328f75ea2aeb68776ef73bff3eb3bb74a
-				</div>
-				
-		</div> 
 	</div>
 	</section>
+
+
+
+<section class="page-section">
+		<div class="container">
+		<div class="row" align="center">
+				<div class="col-lg-12">
+            <div class="milestone">
+             <h1><time>00:00:00</time></h1>
+            </div>
+			<div class="row" align="center">
+				<div class="col-lg-12">
+					<p> <div class="stopwatch">
+            <div class="controls">
+                <button id="start" STYLE="font-size: 14px;  min-width: 140px; text-align: center; padding: 15px 10px; position: relative; color: #fff; border: none;background-color: #000;margin-right: 15px;z-index: 1;">Start</button>
+                <button id="stop"STYLE="font-size: 14px; min-width: 140px;text-align: center;padding: 15px 10px;position: relative;color: #fff;border: none;background-color: #000;margin-right: 15px;z-index: 1;">Stop</button>
+				</div>
+			
+        </div>
+
+        <script src="stopwatch2.js"></script>
+					</p>
+					
+					
+			</div>
+	
+	</section>
+		
 	
 	<footer class="footer-section text-center">
 		<div class="container">
