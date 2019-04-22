@@ -18,10 +18,9 @@ include("connect.php");
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Student View</title>
+	<title>Newsletter</title>
 	<meta charset="UTF-8">
-	<meta name="description" content="Riddle - Portfolio Template">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
 	<link href="img/favicon.ico" rel="shortcut icon"/>
 
 	<!-- Google Fonts -->
@@ -59,7 +58,7 @@ include("connect.php");
 						<ul>
 							<li><a href="stopwatch.html">Stop-Watch</a></li>
 							<li><a href="newsletter.html">Newsletter</a></li>
-							<li><a href="contact.html">Contact</a></li>
+							
 						</ul>
 					</nav>
 				</div>
