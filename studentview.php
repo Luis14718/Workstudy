@@ -90,7 +90,7 @@
 		</div>
 		
 		<div class= "row">
-				<div class="col-md-3 text-center">
+				<div class="col-md-4 text-center">
 				
 				<div class="icon"> 
 				<i class="fas fa-user-graduate"></i>
@@ -101,7 +101,7 @@
 				</div>
 		
 		
-				<div class="col-md-3 text-center">
+				<div class="col-md-4 text-center">
 				
 				<div class="icon"> 
 				<i class="far fa-address-book"></i>
@@ -110,21 +110,8 @@
 				<p>This is an example, of the student report. Here is the report of the student. Hours montly... </p>
 				<p><a href= "" class= "read-more-btn"> View </a>
 				</div>
-				
-				
-				<div class="col-md-3 text-center">
-				
-				<div class="icon"> 
-				<i class="fas fa-qrcode"></i>
-				</div>
-				<h3> Send report </h3>
-				<p>Send report to the office
-				If you have any issue please feel free to contact us</p>
-				<p><a href= "contact.html" class= "read-more-btn"> View </a>
-				</div>
-				
-				
-				<div class="col-md-3 text-center">
+
+				<div class="col-md-4 text-center">
 				
 				<div class="icon"> 
 				<i class="fas fa-clock"></i>
@@ -132,7 +119,7 @@
 				<h3> Clock </h3>
 				<p>It is time to start working. 
 				Come here and start!</p>
-				<p><a  class= "read-more-btn"> View </a>
+				<p><a href="stopwatch.html" class= "read-more-btn"> View </a>
 				</div>
 				
 		</div> 
