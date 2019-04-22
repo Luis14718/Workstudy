@@ -117,17 +117,6 @@
 				<p><a href= "newsletterman.php" class= "read-more-btn"> View </a>
 				</div>
 				
-				<div class="col-md-3 text-center">
-				
-				<div class="icon"> 
-				<i class="fas fa-qrcode"></i>
-				</div>
-				<h3> QR code </h3>
-				<p>It is time to start working. 
-				Use this feature to control who is working</p>
-				<p><a href= "stopwatch.html" class= "read-more-btn"> View </a>
-				</div>
-				
 				
 				
 				

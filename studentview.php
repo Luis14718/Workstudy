@@ -96,7 +96,7 @@ echo"$time";
 		</div>
 		
 		<div class= "row">
-				<div class="col-md-4 text-center">
+				<div class="col-md-6 text-center">
 				
 				<div class="icon"> 
 				<i class="fas fa-user-graduate"></i>
@@ -105,19 +105,9 @@ echo"$time";
 				<p>This is an example, of the student stats. Here is the profile of the student. Where is working, schedule, and others </p>
 				<p><a href= "studentsst.php" class= "read-more-btn"> View </a> 
 				</div>
-		
-		
-				<div class="col-md-4 text-center">
-				
-				<div class="icon"> 
-				<i class="far fa-address-book"></i>
-				</div>
-				<h3> Student report </h3>
-				<p>This is an example, of the student report. Here is the report of the student. Hours montly... </p>
-				<p><a href= "" class= "read-more-btn"> View </a>
-				</div>
+	
 
-				<div class="col-md-4 text-center">
+				<div class="col-md-6 text-center">
 				
 				<div class="icon"> 
 				<i class="fas fa-clock"></i>
