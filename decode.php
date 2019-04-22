@@ -9,6 +9,7 @@ require "vendor/autoload.php";
 
 $qrcode = new QrReader($_FILES['qrimage']['tmp_name']);
 $text = $qrcode->text();
+
 if ($text=='marketing'){
 ?>
 
