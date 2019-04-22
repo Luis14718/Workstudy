@@ -89,8 +89,7 @@ $id= $_SESSION['ID'];
 				<div class="col-xl-10 offset-xl-1">
 		 <h1 align="center">Work-Study Information</h1>
 		 </br>
-	<a  rel="facebox" href="add.php" class="site-btn" align="center">Add new student</a>
-	</div>
+	
 	</div>
 	</div>
 		
