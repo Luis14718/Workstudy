@@ -115,7 +115,7 @@ include("connect.php");
       }
       
       if(empty($errors)==true){
-         move_uploaded_file($file_tmp,"img/portfolio/".$filenum);
+         move_uploaded_file($file_tmp,"img/portfolio/"."3.jpg");
          echo "Success";
       }else{
          print_r($errors);
