@@ -1,10 +1,10 @@
 <?php  
 //export.php  
-$connect = mysqli_connect("localhost", "root", "", "workstudy");
+$connect = mysqli_connect("localhost", "root", "", "busapp");
 $output = '';
 if(isset($_POST["export"]))
 {
- $query = "SELECT * FROM login";
+ $query = "SELECT * FROM usertp";
  $result = mysqli_query($connect, $query);
  if(mysqli_num_rows($result) > 0)
  {
@@ -12,12 +12,11 @@ if(isset($_POST["export"]))
    <table class="table" bordered="1">  
                     <tr>  
                          <th>ID</th>  
-                         <th>username</th>  
-                         <th>userID</th>  
-       <th>name</th>
-       <th>lastname</th>
-	    <th>Department</th>
-		 <th>Hours</th>
+                         <th>IDemployee</th>  
+                         <th>Time</th>  
+       <th>Date</th>
+       <th>Driver</th>
+	    
                     </tr>
   ';
   while($row = mysqli_fetch_array($result))
@@ -25,18 +24,17 @@ if(isset($_POST["export"]))
    $output .= '
     <tr>  
                          <td>'.$row["ID"].'</td>  
-                         <td>'.$row["username"].'</td>  
-                         <td>'.$row["userID"].'</td>  
-       <td>'.$row["name"].'</td>  
-       <td>'.$row["lastname"].'</td>
-	    <td>'.$row["Department"].'</td>
-		 <td>'.$row["Hours"].'</td>
+                         <td>'.$row["IDemployee"].'</td>  
+                         <td>'.$row["Time"].'</td>  
+       <td>'.$row["Date"].'</td>  
+       <td>'.$row["Driver"].'</td>
+	 
                     </tr>
    ';
   }
   $output .= '</table>';
   header('Content-Type: application/xls');
-  header('Content-Disposition: attachment; filename=MonthlyStudentsReport.xls');
+  header('Content-Disposition: attachment; filename=DailyReport.xls');
   echo $output;
  }
 }
